@@ -1,0 +1,140 @@
+:root {
+    --Orange: hsl(25, 97%, 53%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+body{
+    font-family: 'Overpass', sans-serif;
+    color: white;
+    width: 100vw;
+    background-color: hsl(216, 12%, 8%);
+    margin: 0;
+}
+
+main{
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    height: 90vh;
+
+    flex-wrap: wrap; 
+
+    flex-direction: column;
+        justify-content: center;
+    
+}
+
+.hidden{
+    display: none;
+}
+
+.box{
+    margin: 0 9%;
+    padding: 20px;
+    width: 70%;
+    border-radius: 10px;
+    /* justify-items: center;
+    align-items: center; */
+    flex-wrap: wrap;
+    background: linear-gradient (var(--Very-Dark-Blue), hsl(216, 12%, 8%));
+    /* background-color: hsl(213, 19%, 18%); */
+    box-shadow: -0.9px 0.9px hsl(213, 19%, 18%);
+    width: 250px;
+}
+
+.boxThanks{
+    text-align: center;
+}
+
+.star{
+    border-radius: 50%;
+    background-color: var(--Dark-Blue);
+    padding: 1rem;
+    width: 1rem;
+    height: 1rem;
+}
+
+h2{
+    margin-bottom: 1rem;
+}
+
+.pThanks {
+    border-radius: 10px;
+    color:var(--Orange);
+    background-color:var(--Very-Dark-Blue);
+    padding: 0.2rem 0;
+    margin: 14%;
+
+}
+
+p{
+    font-size: 15px;
+    color: var(--Light-Grey);
+    margin: 1rem 0;
+}
+
+.rating{
+padding-top: 0.5rem;
+}
+
+ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0;
+}
+
+li{
+    border-radius: 50%;
+    list-style: none;
+    background-color: hsl(213, 19%, 18%);
+    color: var(--Light-Grey);
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.summitButton{
+    background-color: var(--Orange);
+    border: none;
+    border-radius: 50px;
+    width: 100%;
+    color: white;
+    text-transform:uppercase;
+    font-weight: bold;
+    padding: 1rem 0;
+}
+
+.attribution{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+
+}
+.attribution p, a{
+    color: darkgray;
+    text-align: center;
+}
+
+
+@media screen and (min-width: 1000px) {
+
+
+    main{
+        flex-direction: column;
+        justify-content: center;
+        height: 90vh;
+    }
+
+    .box{
+        border-radius: 20px;
+    }
+}
