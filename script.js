@@ -3,28 +3,22 @@ const boxThanks = document.querySelector(".boxThanks");
 const box = document.querySelector(".box");
 
 const btns = document.querySelectorAll(".btn")
+const rateAgain = document.querySelector(".btn")
 
-let selection = document.querySelector (".selection")
-
-console.log(btns);
-console.log(selection)
+let selection = document.querySelector(".selection")
 
 
 
-
-summitButton.addEventListener ("click", () =>{
-    boxThanks.classList.remove ("hidden");
-    box.classList.add ("hidden")
+summitButton.addEventListener("click", () => {
+    boxThanks.classList.remove("hidden");
+    box.classList.add("hidden")
 
 })
 
 btns.forEach((boton) => {
-    boton.addEventListener("click", function() {
-      console.log(`Haz hecho clic en el botón ${boton.textContent}`);
-      console.log(selection.textContent);
-      selection.innerHTML = boton.textContent
-      console.log(selection.textContent);
-      })
-    
-  });
-
+    boton.addEventListener("click", function () {
+        selection.innerHTML = boton.textContent;
+        console.log(selection.textContent);
+        boton.classList.add("btnSelection");
+    })
+})

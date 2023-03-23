@@ -39,9 +39,9 @@ main{
     /* justify-items: center;
     align-items: center; */
     flex-wrap: wrap;
-    background: linear-gradient (var(--Very-Dark-Blue), hsl(216, 12%, 8%));
-    /* background-color: hsl(213, 19%, 18%); */
+    background-image: linear-gradient(var(--Dark-Blue), var(--Very-Dark-Blue));
     box-shadow: -0.9px 0.9px hsl(213, 19%, 18%);
+    /* background-color: hsl(213, 19%, 18%); */
     width: 250px;
 }
 
@@ -81,13 +81,17 @@ padding-top: 0.5rem;
 }
 
 ul{
+    list-style: none;
+}
+
+.buttons-list{
     display: flex;
     width: 100%;
     justify-content: space-between;
     padding: 0;
 }
 
-li{
+.btn{
     border-radius: 50%;
     list-style: none;
     background-color: hsl(213, 19%, 18%);
@@ -98,7 +102,22 @@ li{
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    border: none;
 }
+
+.btn:focus {
+    background-color: var(--Light-Grey);
+    /* font-size: 1.2rem; */
+    color: #fff;
+  }
+
+.btn:hover{
+    background-color: var(--Orange);
+    cursor:pointer;
+    color: #fff;
+
+}
+
 
 .summitButton{
     background-color: var(--Orange);
@@ -109,6 +128,8 @@ li{
     text-transform:uppercase;
     font-weight: bold;
     padding: 1rem 0;
+    cursor:pointer;
+
 }
 
 .attribution{
