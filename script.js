@@ -3,7 +3,6 @@ const boxThanks = document.querySelector(".boxThanks");
 const box = document.querySelector(".box");
 
 const btns = document.querySelectorAll(".btn")
-const rateAgain = document.querySelector(".btn")
 
 let selection = document.querySelector(".selection")
 
